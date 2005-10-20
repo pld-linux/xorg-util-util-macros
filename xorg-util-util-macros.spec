@@ -8,7 +8,7 @@ Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/util/util-macros-%{version}.tar.bz2
 # Source0-md5:	04a213cd8cbe2c5f4576a4eda73316c4
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
