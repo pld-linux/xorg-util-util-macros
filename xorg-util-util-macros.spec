@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
-# Source0-md5:	bc6be634532d4936eb753de54e1663d3
+# Source0-md5:	299e3f40e16d9efdb662930c4d1d6de5
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
