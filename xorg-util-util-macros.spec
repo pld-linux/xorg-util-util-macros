@@ -19,7 +19,7 @@ Autoconf macros for xorg.
 Makra autoconfa dla xorg.
 
 %prep
-%setup -q -n util-macros-X11R7.0-%{version}
+%setup -q -n util-macros-%{version}
 
 %build
 %{__aclocal}
