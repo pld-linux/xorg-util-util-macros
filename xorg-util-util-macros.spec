@@ -1,12 +1,12 @@
 Summary:	Autoconf macros for xorg
 Summary(pl):	Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
-Version:	1.1.4
+Version:	1.1.5
 Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
-# Source0-md5:	3a2ae1dec09aa32a808a25b14838c49d
+# Source0-md5:	51952682d8b42aeda3af5cee0133ce2c
 Patch0:		%{name}-x.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
@@ -14,10 +14,14 @@ BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Autoconf macros for xorg.
+This is a set of autoconf macros used by the configure.ac scripts in
+other Xorg modular packages, and is needed to generate new versions of
+their configure scripts with autoconf.
 
 %description -l pl
-Makra autoconfa dla xorg.
+Ten pakiet zawiera makra autoconfa u¿ywane przez skrypty configure.ac
+w innych pakietach modularnego Xorg. Jest wymagany do generowania
+nowych wersji skryptów configure przy u¿yciu autoconfa.
 
 %prep
 %setup -q -n util-macros-%{version}
@@ -42,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %{_aclocaldir}/xorgversion.m4
 %{_aclocaldir}/xorg-macros.m4
