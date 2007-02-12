@@ -1,5 +1,5 @@
 Summary:	Autoconf macros for xorg
-Summary(pl):	Makra autoconfa dla xorg
+Summary(pl.UTF-8):   Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
 Version:	1.1.5
 Release:	1
@@ -18,10 +18,10 @@ This is a set of autoconf macros used by the configure.ac scripts in
 other Xorg modular packages, and is needed to generate new versions of
 their configure scripts with autoconf.
 
-%description -l pl
-Ten pakiet zawiera makra autoconfa uøywane przez skrypty configure.ac
+%description -l pl.UTF-8
+Ten pakiet zawiera makra autoconfa u≈ºywane przez skrypty configure.ac
 w innych pakietach modularnego Xorg. Jest wymagany do generowania
-nowych wersji skryptÛw configure przy uøyciu autoconfa.
+nowych wersji skrypt√≥w configure przy u≈ºyciu autoconfa.
 
 %prep
 %setup -q -n util-macros-%{version}
