@@ -1,5 +1,5 @@
 Summary:	Autoconf macros for xorg
-Summary(pl.UTF-8):   Makra autoconfa dla xorg
+Summary(pl.UTF-8):	Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
 Version:	1.1.5
 Release:	1
