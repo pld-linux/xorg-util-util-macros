@@ -1,12 +1,12 @@
 Summary:	Autoconf macros for xorg
 Summary(pl.UTF-8):	Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
-Version:	1.2.1
+Version:	1.2.2
 Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
-# Source0-md5:	dc7ddaf9bea8b341510efe4dac125af4
+# Source0-md5:	0f9d0c659f269e905bcb9f706bc561ba
 Patch0:		%{name}-x.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
