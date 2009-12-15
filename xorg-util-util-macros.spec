@@ -10,8 +10,9 @@ Source0:	http://xorg.freedesktop.org/releases/individual/util/util-macros-%{vers
 Patch0:		%{name}-x.patch
 Patch1:		%{name}-nosilent.patch
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
+BuildRequires:	rpmbuild(macros) >= 1.446
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
