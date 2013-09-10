@@ -1,12 +1,19 @@
+#
+# Conditional build:
+%bcond_with	manx	# "x" suffix for manpage files
+# NOTE: FHS 2.3 says that X man pages must have .[1-8]x extensions;
+# but has been dropped in Xorg upstream and requires sed fixes to generate proper .so refs
+# (to point to man[1-8] dirs, not man[1-8]x)
+#
 Summary:	Autoconf macros for xorg
 Summary(pl.UTF-8):	Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
-Version:	1.17
+Version:	1.17.1
 Release:	1
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	http://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
-# Source0-md5:	4f41667e1bf4938bb2b24fa09d517f77
+# Source0-md5:	661d762243f494d390613b85ee321a50
 Patch0:		%{name}-x.patch
 Patch1:		%{name}-nosilent.patch
 URL:		http://xorg.freedesktop.org/
@@ -28,7 +35,7 @@ nowych wersji skryptów configure przy użyciu autoconfa.
 
 %prep
 %setup -q -n util-macros-%{version}
-%patch0 -R -p1
+%{?with_manx:%patch0 -R -p1}
 %patch1 -p1
 
 %build
@@ -51,5 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README
+%{_datadir}/util-macros
 %{_aclocaldir}/xorg-macros.m4
 %{_npkgconfigdir}/xorg-macros.pc
