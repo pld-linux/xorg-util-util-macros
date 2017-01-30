@@ -8,15 +8,15 @@
 Summary:	Autoconf macros for xorg
 Summary(pl.UTF-8):	Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
-Version:	1.19.0
-Release:	2
+Version:	1.19.1
+Release:	1
 License:	MIT
 Group:		X11/Development/Tools
-Source0:	http://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
-# Source0-md5:	1cf984125e75f8204938d998a8b6c1e1
+Source0:	https://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
+# Source0-md5:	6e76e546a4e580f15cebaf8019ef1625
 Patch0:		%{name}-x.patch
 Patch1:		%{name}-nosilent.patch
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.62
 BuildRequires:	automake
 BuildRequires:	rpmbuild(macros) >= 1.446
