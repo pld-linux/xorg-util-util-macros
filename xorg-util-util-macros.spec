@@ -9,7 +9,7 @@ Summary:	Autoconf macros for xorg
 Summary(pl.UTF-8):	Makra autoconfa dla xorg
 Name:		xorg-util-util-macros
 Version:	1.19.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Tools
 Source0:	https://xorg.freedesktop.org/releases/individual/util/util-macros-%{version}.tar.bz2
@@ -22,6 +22,8 @@ BuildRequires:	automake
 BuildRequires:	rpmbuild(macros) >= 1.446
 Requires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_debugsource_packages	0
 
 %description
 This is a set of autoconf macros used by the configure.ac scripts in
