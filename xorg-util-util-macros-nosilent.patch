@@ -1,11 +1,11 @@
---- util-macros-1.6.1/xorg-macros.m4.in~	2010-03-11 19:25:58.615020308 +0100
-+++ util-macros-1.6.1/xorg-macros.m4.in	2010-03-11 19:27:14.224808076 +0100
-@@ -1005,7 +1005,7 @@
+--- util-macros-1.20.0/xorg-macros.m4.in~	2010-03-11 19:25:58.615020308 +0100
++++ util-macros-1.20.0/xorg-macros.m4.in	2010-03-11 19:27:14.224808076 +0100
+@@ -1836,7 +1836,7 @@ XORG_RELEASE_VERSION
  XORG_CHANGELOG
  XORG_INSTALL
  XORG_MANPAGE_SECTIONS
 -m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])],
 +m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES],
      [AC_SUBST([AM_DEFAULT_VERBOSITY], [1])])
- ]) # XORG_DEFAULT_OPTIONS
+ ]) # XORG_DEFAULT_NOCODE_OPTIONS
  
