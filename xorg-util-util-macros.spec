@@ -40,7 +40,7 @@ nowych wersji skryptów configure przy użyciu autoconfa.
 %prep
 %setup -q -n util-macros-%{version}
 %{?with_manx:%patch0 -R -p1}
-%patch1 -p1
+%patch -P1 -p1
 
 %build
 %{__aclocal}
